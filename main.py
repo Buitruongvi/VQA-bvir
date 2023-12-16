@@ -70,14 +70,9 @@ def main():
 
     test_loader = DataLoader(
         test_dataset,
-        batch_size=train_batch_size,
+        batch_size=test_batch_size,
         shuffle=False
     )
-
-    n_classes = len(classes)
-    hidden_size = 1024
-    n_layers = 1
-    dropout_prod = 0.2
 
     text_encoder = TextEncoder().to(device)
     visual_encoder = VisualEncoder().to(device)

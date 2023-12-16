@@ -7,7 +7,7 @@ class VQADataset(Dataset):
   def __init__(self,
                data, classes_to_idx, img_feature_extractor, text_tokenizer,
                device,
-               root_dir='/content/val2014-resised'):
+               root_dir='data/vqa_coco_dataset/val2014-resised'):
     self.data = data
     self.root_dir = root_dir
     self.classes_to_idx = classes_to_idx
