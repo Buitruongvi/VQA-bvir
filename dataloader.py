@@ -1,6 +1,7 @@
 import os
 import torch
 from PIL import Image
+
 class VQADataset(Dataset):
   def __init__(self,
                data, classes_to_idx, img_feature_extractor, text_tokenizer,
