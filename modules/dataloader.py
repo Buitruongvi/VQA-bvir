@@ -38,7 +38,7 @@ class VQADataset(Dataset):
 
 
     label = self.data[index]['answer']
-    label = classes_to_idx[label]
+    label = self.classes_to_idx[label]
     label = torch.tensor(label, dtype=torch.long).to(self.device)
 
     sample = {
