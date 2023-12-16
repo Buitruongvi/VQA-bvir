@@ -1,3 +1,5 @@
+import torch
+
 def evaluate(model, dataloader, criterion):
   model.eval()
   correct = 0
